@@ -6,28 +6,58 @@ $text-color: #333;
 $link-hover-color: color.adjust($primary-color, $lightness: -10%);
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-    background-color: $background-color;
-    color: $text-color;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-h1 {
-    font-size: 2.5em;
-    color: $primary-color;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-p {
-    font-size: 1.2em;
+.notation {
+    width: 33%;
+    background-color: rgba(0, 0, 0, 0.6); /* Halbdurchsichtiges Schwarz */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-a {
-    color: $primary-color;
-    text-decoration: none;
+.notation h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #f4d03f; /* Goldene Farbe */
+}
 
-    &:hover {
-        text-decoration: underline;
-        color: $link-hover-color;
-    }
+.notation p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.current-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.current-position img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 2px solid #f4d03f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
