@@ -1,7 +1,9 @@
+@use "sass:color";
+
 $primary-color: #007acc;
 $background-color: #f4f4f9;
 $text-color: #333;
-$link-hover-color: darken($primary-color, 10%);
+$link-hover-color: color.adjust($primary-color, $lightness: -10%);
 
 body {
     font-family: Arial, sans-serif;

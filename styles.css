@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #007acc;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(0, 91.5, 153);
+}
+
+/*# sourceMappingURL=styles.css.map */
