@@ -1,0 +1,31 @@
+$primary-color: #007acc;
+$background-color: #f4f4f9;
+$text-color: #333;
+$link-hover-color: darken($primary-color, 10%);
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: $primary-color;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: $link-hover-color;
+    }
+}
